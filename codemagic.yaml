@@ -16,7 +16,7 @@ workflows:
       - name: HelloWorld
         script: echo HelloWorld!
       - name: Create artifacts
-        script: touch test.txt && echo HelloWorld > test.txt && echo {PWD}
+        script: touch test.txt && echo HelloWorld > test.txt && echo $PWD
     artifacts:
       - $PWD/txt.txt
 #      - app/build/outputs/**/**/*.aab
