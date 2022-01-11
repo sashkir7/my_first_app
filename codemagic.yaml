@@ -18,7 +18,7 @@ workflows:
       - name: Create artifacts
         script: touch test.txt && echo HelloWorld > test.txt && echo $PWD
     artifacts:
-      - $PWD/txt.txt
+      - /Users/builder/clone/test.txt
 #      - app/build/outputs/**/**/*.aab
 #    publishing:
 #      google_play:
